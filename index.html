@@ -3,56 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Рево-Кофе</title>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <div>
-            <h1>МойСайт</h1>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#home"><h1>Рево</h1></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="#coffee">Кофе</a></li>
+                <li class="nav__item"><a class="nav__link" href="#phinma">Финма</a></li>
+                <li class="nav__item"><a class="nav__link" href="#mal">Мал</a></li>
+                <li class="nav__item"><a class="nav__link" href="#combo">Комбо</a></li>
+                <li class="nav__item"><a class="nav__link" href="#giftset">Подарки</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
             </ul>
         </nav>
+        <div class="header__personalized">
+            <a href="#personalized" class="header__link">Ваш персональный кофе</a>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Добро пожаловать!</h2>
-            <p>Это главная страница нашего веб-приложения.</p>
+        <section id="home" class="section section--hero">
+            <div class="container">
+                <h2 class="section__title">Ваш персональный кофе</h2>
+                <div class="features">
+                    <div class="feature feature--origin">
+                        <h3 class="feature__title">Источник</h3>
+                        <p class="feature__text">Предварительные выводы неутешительны: консультация с&nbsp;широким активом влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации существующих финансовых и&nbsp;административных условий.</p>
+                    </div>
+                    <div class="feature feature--quality">
+                        <h3 class="feature__title">Качество</h3>
+                        <p class="feature__text">Для современного мира постоянный количественный рост и&nbsp;сфера нашей активности прекрасно подходит для реализации стандартных подходов.</p>
+                    </div>
+                    <div class="feature feature--types">
+                        <h3 class="feature__title">Сорта зерен</h3>
+                        <p class="feature__text">А&nbsp;ещё явные признаки победы институционализации, вне зависимости от&nbsp;их&nbsp;уровня, должны быть преданы социально-демократической анафеме.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы компания, которая занимается созданием качественных веб-решений.
-</p>
+        <section id="coffee" class="section section--products">
+            <div class="container">
+                <h2 class="section__title">Выберите свой любимый</h2>
+                <div class="products-grid">
+                    <article class="product product--morning">
+                        <h3 class="product__name">Рево Утро</h3>
+                        <p class="product__price">99.000</p>
+                        <p class="product__description">[Описание кофе Рево Утро]</p>
+                        <div class="product__actions">
+                            <a href="#" class="product__button product__button--buy">Купить сейчас</a>
+                            <a href="#" class="product__button product__button--detail">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="product product--everyday">
+                        <h3 class="product__name">Рево Повседневный</h3>
+                        <p class="product__price">85.000</p>
+                        <p class="product__description">В&nbsp;частности, синтетическое тестирование требует анализа существующих финансовых и&nbsp;административных условий.</p>
+                        <div class="product__actions">
+                            <a href="#" class="product__button product__button--buy">Купить сейчас</a>
+                            <a href="#" class="product__button product__button--detail">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="product product--origin">
+                        <h3 class="product__name">Рево Оригинал</h3>
+                        <p class="product__price">139.000</p>
+                        <p class="product__description">В&nbsp;частности, социально-экономическое развитие в&nbsp;значительной степени обусловливает важность прогресса профессионального сообщества.</p>
+                        <div class="product__actions">
+                            <a href="#" class="product__button product__button--buy">Купить сейчас</a>
+                            <a href="#" class="product__button product__button--detail">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="product product--damda">
+                        <h3 class="product__name">Рево Дамда</h3>
+                        <p class="product__price">75.000</p>
+                        <p class="product__description">Вот вам яркий пример современных тенденций&nbsp;&mdash; высококачественный прототип будущего проекта в&nbsp;значительной степени обусловливает важность вывода текущих активов.</p>
+                        <div class="product__actions">
+                            <a href="#" class="product__button product__button--buy">Купить сейчас</a>
+                            <a href="#" class="product__button product__button--detail">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Веб-разработка</li>
-                <li>Дизайн</li>
-                <li>Консультации</li>
-            </ul>
+        <section id="giftset" class="section section--giftset">
+            <div class="container">
+                <h2 class="section__title">Лучший подарок для лучшего друга</h2>
+                <div class="giftset-content">
+                    <div class="giftset-info">
+                        <h3 class="giftset__title">Подарочный набор</h3>
+                        <p class="giftset__description">Являясь всего лишь частью общей картины, многие известные личности, вне зависимости от&nbsp;их&nbsp;уровня, должны быть подвергнуты целой серии независимых исследований.</p>
+                        <p class="giftset__price">285.000</p>
+                        <div class="giftset__actions">
+                            <a href="#" class="giftset__button giftset__button--buy">Купить сейчас</a>
+                            <a href="#" class="giftset__button giftset__button--detail">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="giftset-image">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: perkaso@yandex.ru</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
+        <section id="combo" class="section section--combo">
+            <div class="container">
+                <h2 class="section__title">Ваш персональный кофе КОМБО </h2>
+                <div class="combo-images">
+                    <img src="assets/img/revo.jpg" alt="Рево" class="combo-image combo-image--revo">
+                    <img src="assets/img/revoq.jpg" alt="РевоКью" class="combo-image combo-image--revoq">
+                    <img src="assets/img/revo2.jpg" alt="Рево2" class="combo-image combo-image--revo2">
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Сайт. Все права защищены.</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2025 Рево-Кофе. Все права защищены.</p>
+        </div>
     </footer>
 </body>
-
 </html>
