@@ -6,25 +6,33 @@
     <title>Рево-Кофе</title>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="#home"><h1>Рево</h1></a>
-        </div>
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#home">Главная</a></li>
-                <li class="nav__item"><a class="nav__link" href="#coffee">Кофе</a></li>
-                <li class="nav__item"><a class="nav__link" href="#phinma">Финма</a></li>
-                <li class="nav__item"><a class="nav__link" href="#mal">Мал</a></li>
-                <li class="nav__item"><a class="nav__link" href="#combo">Комбо</a></li>
-                <li class="nav__item"><a class="nav__link" href="#giftset">Подарки</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="header__personalized">
-            <a href="#personalized" class="header__link">Ваш персональный кофе</a>
+        <div class="container header__inner">
+            <div class="header__logo">
+                <a href="#home"><h1>Рево</h1></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+            <nav class="header__nav nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#coffee">Кофе</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#phinma">Финма</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#mal">Мал</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#combo">Комбо</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#giftset">Подарки</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__personalized">
+                <a href="#personalized" class="header__link">Ваш персональный кофе</a>
+            </div>
         </div>
     </header>
 
@@ -143,5 +151,9 @@
             <p class="footer__copyright">&copy; 2025 Рево-Кофе. Все права защищены.</p>
         </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
